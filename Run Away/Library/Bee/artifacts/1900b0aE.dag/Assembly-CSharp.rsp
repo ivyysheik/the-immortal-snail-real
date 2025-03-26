@@ -363,11 +363,13 @@
 "Assets/aboutButton.cs"
 "Assets/BackButton.cs"
 "Assets/EnemyNavMesh.cs"
+"Assets/Potion.cs"
 "Assets/Script/ClickButtonOliver.cs"
 "Assets/Script/EnterToPlay.cs"
 "Assets/Script/MoveTowardsAndCollision.cs"
 "Assets/Script/PlayerMovement.cs"
 "Assets/Script/StopwatchScript.cs"
+"Assets/turnsoncanvas.cs"
 -langversion:9.0
 /deterministic
 /optimize+
