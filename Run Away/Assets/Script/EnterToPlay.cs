@@ -8,6 +8,8 @@ public class EnterToPlay : MonoBehaviour
     public bool Playing = false;
     public GameObject titleCard;
     public GameObject titleImage;
+    public GameObject BackButton;
+    public GameObject escapeButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,8 @@ public class EnterToPlay : MonoBehaviour
             Enterisplay.SetActive(false);
             titleCard.SetActive(false);
             titleImage.SetActive(false);
+            BackButton.SetActive(false);
+            escapeButton.SetActive(false);
 
             Playing = true;
 

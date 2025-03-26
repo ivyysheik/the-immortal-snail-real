@@ -62,8 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\EnemyNavMesh.cs" />
     <Compile Include="Assets\Script\StopwatchScript.cs" />
+    <Compile Include="Assets\Script\ClickButtonOliver.cs" />
     <Compile Include="Assets\Script\MoveTowardsAndCollision.cs" />
+    <Compile Include="Assets\BackButton.cs" />
     <Compile Include="Assets\Script\EnterToPlay.cs" />
+    <Compile Include="Assets\aboutButton.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
