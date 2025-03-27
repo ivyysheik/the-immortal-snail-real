@@ -6,6 +6,7 @@ public class potion : MonoBehaviour
 {
     public GameObject player;
     public GameObject speedPotion;
+    public float spawnTimer; 
 
 
 
@@ -26,13 +27,21 @@ public class potion : MonoBehaviour
 
     private void Update()
     {
+        
+
         Vector3 randonSpawnPosition = new Vector3(Random.Range(1820, 1828), -368, Random.Range(-1049, -1040));
-        float spawnTimer = spawnTimer =+ Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.P))
+
+        spawnTimer += Time.deltaTime;
+
+        Debug.Log(spawnTimer);
+        if (spawnTimer > 5)
         {
+            spawnTimer = 0;
             Instantiate(speedPotion, randonSpawnPosition, Quaternion.identity);
             Debug.Log("I should have spawned");
-            spawnTimer = 0;
+          
+       
+            Debug.Log(spawnTimer);
         }
     }
  }

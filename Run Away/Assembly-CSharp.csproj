@@ -66,6 +66,7 @@
     <Compile Include="Assets\Script\ClickButtonOliver.cs" />
     <Compile Include="Assets\Script\MoveTowardsAndCollision.cs" />
     <Compile Include="Assets\BackButton.cs" />
+    <Compile Include="Assets\potionCollection.cs" />
     <Compile Include="Assets\Potion.cs" />
     <Compile Include="Assets\Script\EnterToPlay.cs" />
     <Compile Include="Assets\aboutButton.cs" />

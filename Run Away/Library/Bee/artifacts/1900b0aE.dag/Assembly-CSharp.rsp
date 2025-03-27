@@ -364,6 +364,7 @@
 "Assets/BackButton.cs"
 "Assets/EnemyNavMesh.cs"
 "Assets/Potion.cs"
+"Assets/potionCollection.cs"
 "Assets/Script/ClickButtonOliver.cs"
 "Assets/Script/EnterToPlay.cs"
 "Assets/Script/MoveTowardsAndCollision.cs"

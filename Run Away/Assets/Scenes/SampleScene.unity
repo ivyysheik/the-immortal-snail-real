@@ -1270,8 +1270,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 386464902}
-  - component: {fileID: 386464901}
   - component: {fileID: 386464903}
+  - component: {fileID: 386464904}
   m_Layer: 0
   m_Name: 'potion '
   m_TagString: Untagged
@@ -1279,20 +1279,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &386464901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386464900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45342c00e6be33948924fe9380c59f6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 659091729}
-  speedPotion: {fileID: 386464900}
 --- !u!4 &386464902
 Transform:
   m_ObjectHideFlags: 0
@@ -1328,8 +1314,23 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2.4423218, z: 1}
+  m_Size: {x: 1.91, y: 4.63, z: 2.78}
   m_Center: {x: -1819.04, y: 372.7012, z: 1049.694}
+--- !u!114 &386464904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386464900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2682d2394142ebe48b4e61e127244ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 659091729}
+  speedPotion: {fileID: 386464900}
+  spawnTimer: 0
 --- !u!1 &421282479
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,6 +2048,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5b96527a0a1c29e4fa719e208efe7770, type: 3}
   m_PrefabInstance: {fileID: 90896982}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &628290486
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 990946147}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.226028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.226028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.226028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1819.0402
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 371.9763
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5520.6943
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b5f66a70a89c6fa4ea43a254b39433e5, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+      propertyPath: m_Name
+      value: potion_lp2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
 --- !u!1 &630548852
 GameObject:
   m_ObjectHideFlags: 0
@@ -2929,7 +3007,7 @@ Transform:
   m_GameObject: {fileID: 981055485}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.63, y: 0, z: 0}
+  m_LocalPosition: {x: -8.189655, y: 0, z: 0}
   m_LocalScale: {x: 1.16, y: 1.16, z: 1.16}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3006,6 +3084,76 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981055485}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &990946144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 990946147}
+  - component: {fileID: 990946146}
+  - component: {fileID: 990946145}
+  m_Layer: 0
+  m_Name: potion script holder so it keeps working after collecting first one
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!65 &990946145
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990946144}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.91, y: 4.63, z: 2.78}
+  m_Center: {x: -1819.04, y: 372.7012, z: 1049.694}
+--- !u!114 &990946146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990946144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45342c00e6be33948924fe9380c59f6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 659091729}
+  speedPotion: {fileID: 990946144}
+  spawnTimer: 0
+--- !u!4 &990946147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990946144}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1822.0402, y: -353.7012, z: -1043.6942}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1641421488}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1019183179 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e836dece194bd044890860101e33d555, type: 3}
@@ -3253,8 +3401,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.02, y: 3.76, z: 5.0276}
-  m_LocalScale: {x: 1.16, y: 1.16, z: 1.16}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.11, y: 9.77, z: 1.11}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1705904032}
   m_Father: {fileID: 0}
@@ -3595,7 +3743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1414054476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3619,6 +3767,53 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 822.49976, y: 1011.8489, z: 2078.9958}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1485885260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1485885262}
+  - component: {fileID: 1485885261}
+  m_Layer: 0
+  m_Name: potion spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1485885261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485885260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45342c00e6be33948924fe9380c59f6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 659091729}
+  speedPotion: {fileID: 386464900}
+  spawnTimer: 0
+--- !u!4 &1485885262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485885260}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1921.5383, y: -613.71173, z: 1784.5726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3928,6 +4123,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600592068}
   m_CullTransparentMesh: 1
+--- !u!4 &1641421488 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7a05357d49b3ea742be779f2b3b26e59, type: 3}
+  m_PrefabInstance: {fileID: 628290486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1670661783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4909,6 +5109,8 @@ SceneRoots:
   - {fileID: 383671281}
   - {fileID: 659091733}
   - {fileID: 386464902}
+  - {fileID: 990946147}
   - {fileID: 1414054477}
   - {fileID: 497171793}
   - {fileID: 1153419041}
+  - {fileID: 1485885262}

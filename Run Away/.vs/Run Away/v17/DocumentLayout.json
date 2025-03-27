@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB0F3661-5F62-192C-D782-F99E6AF56771}|Assembly-CSharp.csproj|c:\\users\\1234424\\downloads\\run away 5.3.25\\the-immortal-snail-real\\run away\\assets\\potioncollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0F3661-5F62-192C-D782-F99E6AF56771}|Assembly-CSharp.csproj|solutionrelative:assets\\potioncollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB0F3661-5F62-192C-D782-F99E6AF56771}|Assembly-CSharp.csproj|c:\\users\\1234424\\downloads\\run away 5.3.25\\the-immortal-snail-real\\run away\\assets\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB0F3661-5F62-192C-D782-F99E6AF56771}|Assembly-CSharp.csproj|solutionrelative:assets\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -62,11 +66,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "potionCollection.cs",
+              "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\potionCollection.cs",
+              "RelativeDocumentMoniker": "Assets\\potionCollection.cs",
+              "ToolTip": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\potionCollection.cs",
+              "RelativeToolTip": "Assets\\potionCollection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T15:54:41.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "StopwatchScript.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\Script\\StopwatchScript.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\StopwatchScript.cs",
@@ -78,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "turnsoncanvas.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\turnsoncanvas.cs",
               "RelativeDocumentMoniker": "Assets\\turnsoncanvas.cs",
@@ -90,20 +107,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Potion.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\Potion.cs",
               "RelativeDocumentMoniker": "Assets\\Potion.cs",
               "ToolTip": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\Potion.cs",
               "RelativeToolTip": "Assets\\Potion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T15:57:02.9Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "BackButton.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\BackButton.cs",
               "RelativeDocumentMoniker": "Assets\\BackButton.cs",
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ClickButtonOliver.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\Script\\ClickButtonOliver.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ClickButtonOliver.cs",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "aboutButton.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\aboutButton.cs",
               "RelativeDocumentMoniker": "Assets\\aboutButton.cs",
@@ -139,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EnterToPlay.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\Script\\EnterToPlay.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\EnterToPlay.cs",
@@ -151,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "BaseInput.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\InputModules\\BaseInput.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\InputModules\\BaseInput.cs",
@@ -164,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MoveTowardsAndCollision.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\Script\\MoveTowardsAndCollision.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\MoveTowardsAndCollision.cs",
@@ -176,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away 5.3.25\\the-immortal-snail-real\\Run Away\\Assets\\Script\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerMovement.cs",
@@ -188,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "StopwatchScript.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away\\Run Away\\Assets\\StopwatchScript.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Run Away\\Run Away\\Assets\\StopwatchScript.cs",
@@ -201,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away\\Run Away\\Assets\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Run Away\\Run Away\\Assets\\PlayerMovement.cs",
@@ -214,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MoveTowardsAndCollision.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away\\Run Away\\Assets\\MoveTowardsAndCollision.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Run Away\\Run Away\\Assets\\MoveTowardsAndCollision.cs",
@@ -227,14 +244,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Stopwatch.cs",
               "DocumentMoniker": "C:\\Users\\1234424\\Downloads\\Run Away\\Run Away\\Assets\\Stopwatch.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Run Away\\Run Away\\Assets\\Stopwatch.cs",
               "ToolTip": "C:\\Users\\1234424\\Downloads\\Run Away\\Run Away\\Assets\\Stopwatch.cs",
               "RelativeToolTip": "..\\..\\..\\Run Away\\Run Away\\Assets\\Stopwatch.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T10:47:26.599Z"
+              "WhenOpened": "2025-02-06T10:47:26.599Z",
+              "EditorCaption": ""
             }
           ]
         }
