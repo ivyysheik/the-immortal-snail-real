@@ -105,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 motion = input;
         motion += Vector3.up * -8;
-        controller.Move(input * Time.deltaTime);
+        controller.Move( velocity * Time.deltaTime);
         
     }
 }

@@ -21,7 +21,7 @@ public class potionCollection : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        player.GetComponent<PlayerMovement>().walkSpeed = +1000000;
+        player.GetComponent<PlayerMovement>().walkSpeed += 1.5f;
         Destroy(gameObject);
     }
 }

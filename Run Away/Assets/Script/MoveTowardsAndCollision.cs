@@ -107,7 +107,7 @@ public class NewBehaviourScript : MonoBehaviour
 
          }
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.P))
 
             {
             print("input fired");
