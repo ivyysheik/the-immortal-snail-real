@@ -7,6 +7,10 @@ public class potion : MonoBehaviour
     public GameObject player;
     public GameObject speedPotion;
     public float spawnTimer; 
+    
+    private potionCollection potionScript;
+    
+ 
 
 
 
@@ -14,7 +18,7 @@ public class potion : MonoBehaviour
 
      void Start()
     {
-
+        
     }
 
 
@@ -23,6 +27,8 @@ public class potion : MonoBehaviour
        
         player.GetComponent<PlayerMovement>().walkSpeed = +1000000;
         Destroy(gameObject);
+    
+
     }
 
     private void Update()
@@ -32,13 +38,20 @@ public class potion : MonoBehaviour
         Vector3 randonSpawnPosition = new Vector3(Random.Range(1820, 1828), -368, Random.Range(-1049, -1040));
 
         spawnTimer += Time.deltaTime;
-
+   
         Debug.Log(spawnTimer);
+
+
+      
+
         if (spawnTimer > 5)
         {
             spawnTimer = 0;
+            potionScript = speedPotion.GetComponent<potionCollection>();
+            potionScript.enabled = true;
             Instantiate(speedPotion, randonSpawnPosition, Quaternion.identity);
-            Debug.Log("I should have spawned");
+           
+          
           
        
             Debug.Log(spawnTimer);

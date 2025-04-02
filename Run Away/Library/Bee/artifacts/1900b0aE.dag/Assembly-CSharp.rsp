@@ -361,6 +361,7 @@
 "Assets/EnemyNavMesh.cs"
 "Assets/Potion.cs"
 "Assets/potionCollection.cs"
+"Assets/potionflash.cs"
 "Assets/Script/ClickButtonOliver.cs"
 "Assets/Script/EnterToPlay.cs"
 "Assets/Script/MoveTowardsAndCollision.cs"
