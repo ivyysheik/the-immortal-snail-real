@@ -72,6 +72,7 @@
     <Compile Include="Assets\BackButton.cs" />
     <Compile Include="Assets\potionCollection.cs" />
     <Compile Include="Assets\Potion.cs" />
+    <Compile Include="Assets\Script\PotionSpawner.cs" />
     <Compile Include="Assets\Script\EnterToPlay.cs" />
     <Compile Include="Assets\aboutButton.cs" />
     <Compile Include="Assets\Script\potiontest.cs" />

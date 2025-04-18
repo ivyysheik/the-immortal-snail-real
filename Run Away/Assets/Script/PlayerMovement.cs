@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
             myAnimator.SetBool("Walking", false);
         }
 
+   
 
 
 
@@ -108,4 +109,12 @@ public class PlayerMovement : MonoBehaviour
         controller.Move( velocity * Time.deltaTime);
         
     }
+
+          private void OnTriggerEnter(Collider other)
+    {
+        walkSpeed += 1.5f;
+        Destroy(other.gameObject);
+       
+    }
+
 }

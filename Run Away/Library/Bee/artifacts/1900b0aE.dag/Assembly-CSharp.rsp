@@ -366,6 +366,7 @@
 "Assets/Script/EnterToPlay.cs"
 "Assets/Script/MoveTowardsAndCollision.cs"
 "Assets/Script/PlayerMovement.cs"
+"Assets/Script/PotionSpawner.cs"
 "Assets/Script/potiontest.cs"
 "Assets/Script/StopwatchScript.cs"
 "Assets/turnsoncanvas.cs"

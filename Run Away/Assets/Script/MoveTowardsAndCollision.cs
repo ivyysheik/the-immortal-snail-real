@@ -22,7 +22,9 @@ public class NewBehaviourScript : MonoBehaviour
     private float currentTime;
     public bool playerIsDead;
     private float speedNow;
-    
+    public float highScore;
+
+    public GameObject highScoreText;
 
     [SerializeField] private TMP_Text _text;
 
@@ -37,6 +39,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        highScore = PlayerPrefs.GetFloat("highscore", 0);
         currentTime = 0;
 
         Death.SetActive(false);
@@ -50,6 +53,18 @@ public class NewBehaviourScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(other.gameObject);
+        highScoreText.SetActive(true);
+        highScoreText.GetComponent<TextMeshProUGUI>().text = "highscore:" + highScore.ToString();
+           if (currentTime > highScore)
+        {
+            UnityEngine.Debug.Log("New High Score: " + currentTime);
+            highScore = currentTime;
+            PlayerPrefs.SetFloat("highscore", highScore);
+            PlayerPrefs.Save();
+            highScoreText.GetComponent<TextMeshProUGUI>().text = "highscore:" + highScore.ToString();
+
+        }
+     
         StopTimer();
         Death.SetActive(true);
         playerIsDead = true;
@@ -103,16 +118,17 @@ public class NewBehaviourScript : MonoBehaviour
 
          if (playerIsDead == true)
          {
+     
             Splat.Play();
-
-         }
-
             if (Input.GetKeyDown(KeyCode.P))
 
             {
             print("input fired");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
+
+         }
+
 
         speedNow = speed * currentTime;
     }

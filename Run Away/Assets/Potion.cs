@@ -47,6 +47,14 @@ public class potion : MonoBehaviour
         if (spawnTimer > 5)
         {
             spawnTimer = 0;
+
+            float minimumDistance = 0.1f; 
+            if (Vector3.Distance(player.transform.position, randonSpawnPosition) < minimumDistance)
+            {
+              spawnTimer = 4.9f; 
+              return; 
+              
+            }
             potionScript = speedPotion.GetComponent<potionCollection>();
             potionScript.enabled = true;
             Instantiate(speedPotion, randonSpawnPosition, Quaternion.identity);

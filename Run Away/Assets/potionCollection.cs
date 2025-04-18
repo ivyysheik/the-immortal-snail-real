@@ -14,41 +14,46 @@ public class potionCollection : MonoBehaviour
 
     public bool isFlashing = false;
 
-
-
-private void Update()
-{
-   despawnTimer += Time.deltaTime;
-
-   if (despawnTimer >= 2.5f && !isFlashing)
-   {
-    
-    InvokeRepeating("flash", 1f, flashTime);
-    isFlashing = true;
-   }
-  
-   if (despawnTimer >= 3f)
-   {
-    CancelInvoke("flash");
-    Destroy(gameObject);
-    despawnTimer = 0f;
-   }
-}
-void flash()
-{
-    speedPotion.SetActive(!speedPotion.activeInHierarchy);
-}
-    void Start()
+    private void Update()
     {
-      despawnTimer += Time.deltaTime;
+        despawnTimer += Time.deltaTime;
+
+        if (despawnTimer >= 2.5f && !isFlashing)
+        {
+            InvokeRepeating("flash", 0.3f, flashTime);
+            isFlashing = true;
+        }
+
+        if (despawnTimer >= 3f)
+        {
+            CancelInvoke("flash");
+            Destroy(gameObject);
+            despawnTimer = 0f;
+        }
     }
 
+    void flash()
+    {
+        if (speedPotion != null)
+        {
+            speedPotion.SetActive(!speedPotion.activeInHierarchy);
+            Debug.Log("Flashing: " + speedPotion.name + " is now " + (speedPotion.activeInHierarchy ? "active" : "inactive"));
+        }
+        else
+        {
+            Debug.LogError("speedPotion is not assigned!");
+        }
+    }
+
+    void Start()
+    {
+        despawnTimer += Time.deltaTime;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-
         player.GetComponent<PlayerMovement>().walkSpeed += 1.5f;
         Destroy(gameObject);
-        audioPlayer.Play(); 
+        audioPlayer.Play();
     }
 }
