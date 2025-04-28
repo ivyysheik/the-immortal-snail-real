@@ -362,6 +362,7 @@
 "Assets/Potion.cs"
 "Assets/potionCollection.cs"
 "Assets/potionflash.cs"
+"Assets/RestartButton.cs"
 "Assets/Script/ClickButtonOliver.cs"
 "Assets/Script/EnterToPlay.cs"
 "Assets/Script/MoveTowardsAndCollision.cs"

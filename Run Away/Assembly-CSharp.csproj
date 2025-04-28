@@ -76,6 +76,7 @@
     <Compile Include="Assets\Script\EnterToPlay.cs" />
     <Compile Include="Assets\aboutButton.cs" />
     <Compile Include="Assets\Script\potiontest.cs" />
+    <Compile Include="Assets\RestartButton.cs" />
     <Compile Include="Assets\potionflash.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
   </ItemGroup>

@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 8;
     Animator myAnimator;
     public Vector3 velocity; 
+    public AudioSource audioPlayer;
    
 
    private CharacterController controller;
@@ -112,9 +113,19 @@ public class PlayerMovement : MonoBehaviour
 
           private void OnTriggerEnter(Collider other)
     {
-        walkSpeed += 1.5f;
+        if (other.gameObject.tag == "Potion")
+        
+        {
+          walkSpeed += 0.3f;
         Destroy(other.gameObject);
+        audioPlayer.Play();
+       
+        }
+        
+             
+      
        
     }
 
+  
 }

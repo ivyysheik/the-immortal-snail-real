@@ -8,14 +8,20 @@ using System;
 using JetBrains.Annotations;
 using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class MoveTowardAndCollision : MonoBehaviour
 {
 
     public GameObject Player;
     public GameObject Enemy;
+
+    public GameObject RestartButton;
+
+    public GameObject quitButton;
     public float speed;      
     public EnterToPlay enterToPlay;
     public GameObject Death;
+
+    
     public AudioSource Splat;
 
     private bool timerActive; 
@@ -52,8 +58,11 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        RestartButton.SetActive(true);
+        quitButton.SetActive(true);
         Destroy(other.gameObject);
         highScoreText.SetActive(true);
+      
         highScoreText.GetComponent<TextMeshProUGUI>().text = "highscore:" + highScore.ToString();
            if (currentTime > highScore)
         {
@@ -120,7 +129,7 @@ public class NewBehaviourScript : MonoBehaviour
          {
      
             Splat.Play();
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(KeyCode.Return))
 
             {
             print("input fired");

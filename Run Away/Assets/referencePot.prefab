@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3933632080585879632}
   m_Layer: 0
   m_Name: referencePot
-  m_TagString: Untagged
+  m_TagString: Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,6 +73,7 @@ MonoBehaviour:
   audioPlayer: {fileID: 7159814846985101988, guid: b0b924ca4394ec44694a27de2ba6cd4d, type: 3}
   despawnTimer: 0
   flashTime: 0.01
+  isFlashing: 0
 --- !u!1001 &4616040891240008560
 PrefabInstance:
   m_ObjectHideFlags: 0
